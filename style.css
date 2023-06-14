@@ -48,7 +48,7 @@ button {
     color: white;
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 20px;
+    padding-left: 10px;
     padding-right: 10px;
     gap: 10px;
 }
@@ -57,6 +57,10 @@ button {
     padding-left: 23%;
     padding-top: 30px;
     width: 55%;
+}
+#first-container .first-section p:first-of-type {
+    font-weight: bold;
+    font-size: 50px;
 }
 .two-buttons {
     display: flex;
@@ -131,7 +135,7 @@ button {
         padding: 24px 23%;
     }
     .two-buttons button:nth-child(2) {
-        padding: 12px 42px;
+        padding: 12px 30px;
     }
 }
 @media screen and (max-width: 980px) {
@@ -165,9 +169,9 @@ button {
         color: black;
         margin: 6px 0;
     }
-    /*.nav-bar, .header button {
-        display: none;
-    }*/
+    .nav-bar, .header button {
+        visibility: hidden;
+    }
     .nav-bar {
         position: absolute;
         background-color: #0f0f0f;
@@ -209,11 +213,13 @@ button {
         display: none;
     }
     .nav-bar.active {
-        height: 80%;
-        opacity: 0.7;
+        visibility: visible;
+        height: 100%;
+        opacity: 1;
     }
     .header button.active {
-        opacity: 0.7;
+        opacity: 0.8;
+        visibility: visible;
     }
 }
 @media screen and (max-width: 893px) {
@@ -221,10 +227,49 @@ button {
         padding-top: 20px;
     }
     #first-container .first-section p:first-child {
-        font-size: 12px;
+        font-size: 20px;
     }
     .two-buttons {
         width: 65%;
         padding: 24px 20%;
     }
+}
+@media screen and (max-width: 801px) {
+    .two-buttons {
+        display: block;
+        padding: 0;
+        margin-top: 10px;
+        margin-left: 15%;
+    }
+    .two-buttons .button {
+        padding-right: 20px;
+        margin-left: 17%;
+        margin-bottom: 10px;
+        margin-right: 2%;
+    }
+    .fifth-section {
+        display: block;
+    }
+    .fifth-section > img {
+        width: 65%;
+        height: 400px;
+        margin-left: 10%;
+    }
+}
+@media screen and (max-width: 612px) {
+    .two-buttons {
+        margin-top: 10px;
+        margin-left: 15%;
+    }
+    .two-buttons .button {
+        margin-left: 20%;
+        margin-bottom: 10px;
+    }
+    .fifth-section > img {
+        width: 65%;
+        height: 300px;
+        margin-left: 15%;
+    }
+}
+@media screen and (max-width: 500px) {
 }
