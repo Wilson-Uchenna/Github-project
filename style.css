@@ -280,9 +280,14 @@ button {
         left: 0;
     }
     .header button {
-        right: 22%;
+        right: 25%;
     }
     .fourth-container-box {
         flex-direction: column;
+    }
+}
+@media screen and (max-width: 255px) {
+    .header button {
+        right: 20%;
     }
 }
