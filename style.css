@@ -176,9 +176,9 @@ button {
         position: absolute;
         background-color: #0f0f0f;
         top: 80px;
-        left:60%;
+        left:55%;
         right: 0;
-        width: 40vw;
+        width: 45vw;
         height: 0;
         color: #f9f9f9;
        opacity: 0;
@@ -236,16 +236,17 @@ button {
 }
 @media screen and (max-width: 801px) {
     .two-buttons {
-        display: block;
+        display: flex;
+        flex-direction: column;
         padding: 0;
         margin-top: 10px;
         margin-left: 15%;
     }
     .two-buttons .button {
-        padding-right: 20px;
-        margin-left: 17%;
         margin-bottom: 10px;
-        margin-right: 2%;
+    }
+    .two-buttons.button img {
+        margin-right: 2px;
     }
     .fifth-section {
         display: block;
@@ -262,7 +263,6 @@ button {
         margin-left: 15%;
     }
     .two-buttons .button {
-        margin-left: 20%;
         margin-bottom: 10px;
     }
     .fifth-section > img {
@@ -271,7 +271,7 @@ button {
         margin-left: 15%;
     }
     .header button {
-        right: 5%;
+        right: 3%;
     }
 }
 @media screen and (max-width: 390px) {
@@ -279,14 +279,10 @@ button {
         width: 100vw;
         left: 0;
     }
-}
-@media screen and (max-width: 270px) {
-    .fourth-container-box {
-        display: block;
-    }
-}
-@media screen and (max-width: 252px) {
     .header button {
-        right: 12%;
+        right: 22%;
+    }
+    .fourth-container-box {
+        flex-direction: column;
     }
 }
